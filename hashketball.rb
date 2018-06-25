@@ -170,6 +170,8 @@ def player_stats(player)
  game_hash.collect do |first, second|
    first.collect do |here, and_here|
      and_here[player]
+   end
+ end
 end
 
 def big_shoe_rebounds(player)
