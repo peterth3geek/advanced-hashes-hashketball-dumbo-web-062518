@@ -155,15 +155,13 @@ def player_numbers(team)
     brooklyn_numbers = []
        game_hash[:home][:players].each do |player, number|
         brooklyn_numbers.push(game_hash[:home][:players][player][:number])
-        sorted = brooklyn_numbers.sort
-        sorted
+        brooklyn_numbers.sort
       end
     elsif team == "Charlotte Hornets"
       charlotte_numbers = []
        game_hash[:away][:players].each do |player, number|
       charlotte_numbers.push (game_hash[:away][:players][player][:number])
-      sorted = charlotte_numbers.sort
-      sorted
+      charlotte_numbers.sort
     end
   end
 end
